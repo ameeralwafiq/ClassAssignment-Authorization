@@ -24,7 +24,9 @@ if (isset($_POST['login_user'])) {
         // Redirect to the protected page
         header('Location: studentDetails.php');
         exit();
-    } else {
+    } 
+    
+    else {
         // If the username and password are not valid, display an error message
         array_push($errors, "Wrong username/password combination");
     }
